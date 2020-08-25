@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+  }
+  
+.header {
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    border-bottom-style: solid;
+}
+
+.column{
+    float: left;
+    padding: 20px;
+    height: 100%;
+   
+}
+.column.lside{
+    width: 25%;
+    font-size: 20px;
+    line-height: 2em;
+}
+
+.column.middle{
+    width: 75%;
+    border-left-style: solid;
+}
+.row:after{
+    content:"";
+    display: table;
+    clear: both;
+
+}
+
+@media (max-width: 750px) {
+    .column.lside, .column.middle {
+        width: 100%;
+        border-left-style: none;
+
+    }
+    .column.middle{
+        border-top-style: solid;
+    }
+  }
