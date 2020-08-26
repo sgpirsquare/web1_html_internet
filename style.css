@@ -33,8 +33,10 @@
 }
 
 @media (max-width: 750px) {
-    .column.lside, .column.middle {
+    .column{
         width: 100%;
+    }
+    .column.lside{
         border-left-style: none;
 
     }
