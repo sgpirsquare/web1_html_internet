@@ -32,15 +32,17 @@
 
 }
 
-@media (max-width: 750px) {
-    .column{
+@media screen and (max-width: 750px) {
+    .column.lside {
         width: 100%;
-    }
-    .column.lside{
         border-left-style: none;
-
     }
+        
+
     .column.middle{
+        width: 100%;
         border-top-style: solid;
+        border-left-style: none;
+       
     }
   }
