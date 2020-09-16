@@ -33,7 +33,7 @@
 }
 
 @media screen and (max-width: 750px) {
-    .column.lside{
+    .column .lside{
         width: 100%;
            
     }
@@ -42,5 +42,23 @@
         border-left-style: none;
         border-top-style: solid;
            
+    }
+  }
+@media screen and (max-width: 750px) {
+    .column .lside{
+        width: 100%;
+           
+    }
+    .column .middle{
+        width: 100%;
+        border-left-style: none;
+        border-top-style: solid;
+           
+    }
+    .row{
+        width: 100%;
+    }
+    .header{
+        width: 100%;
     }
   }
