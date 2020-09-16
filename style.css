@@ -16,15 +16,15 @@
    
 }
 .column.lside{
-    width: 25%;
-    font-size: 20px;
-    line-height: 2em;
+    width: 100%;
+       
+}
+.column.middle{
+    width: 100%;
+    border-left-style: none;
+    
 }
 
-.column.middle{
-    width: 75%;
-    border-left-style: solid;
-}
 .row:after{
     content:"";
     display: table;
@@ -32,17 +32,34 @@
 
 }
 
-@media (max-width: 600px) {
-   
+@media (min-width: 600px) {
     .column.lside{
-        width: 100%;
-           
+        width: 25%;
+        font-size: 20px;
+        line-height: 2em;
     }
+    
     .column.middle{
-        width: 100%;
-        border-left-style: none;
+        width: 75%;
+        border-left-style: solid;
         border-top-style: solid;
-           
     }
     
   }
+
+@media (min-width: 768px) {
+    .column.lside{
+        width: 25%;
+        font-size: 20px;
+        line-height: 2em;
+    }
+    
+    .column.middle{
+        width: 75%;
+        border-left-style: solid;
+        border-top-style: solid;
+    }
+    
+        
+  }
+
