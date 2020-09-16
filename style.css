@@ -3,10 +3,9 @@
   }
   
 .header {
-    padding: 30px;
+    padding: 10px;
     text-align: center;
-    font-size: 35px;
-    border-bottom-style: solid;
+    font-size: 25px;
 }
 
 .column{
@@ -17,12 +16,14 @@
 }
 .column.lside{
     width: 100%;
-       
+    line-height: 180%;
+           
 }
 .column.middle{
     width: 100%;
     border-left-style: none;
-    border-top-style: solid;
+    /* border-top-style: solid; */
+    line-height: 180%;
     
 }
 
@@ -34,6 +35,9 @@
 }
 
 @media (min-width: 600px) {
+    .header{
+        border-bottom-style: solid;
+    }
     .column.lside{
         width: 25%;
         font-size: 20px;
@@ -43,6 +47,7 @@
     .column.middle{
         width: 75%;
         border-left-style: solid;
+        
        
     }
     
@@ -58,6 +63,7 @@
     .column.middle{
         width: 75%;
         border-left-style: solid;
+       
        
     }
     
